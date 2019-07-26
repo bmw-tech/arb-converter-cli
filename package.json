@@ -1,0 +1,33 @@
+{
+  "name": "arb-converter-cli",
+  "version": "0.0.0",
+  "description": "CLI to convert ARB (Application Resource Bundle) files to different formats, and viceversa",
+  "author": "Jorge Coca",
+  "license": "MIT",
+  "directories": {
+    "doc": "docs"
+  },
+  "main": "dist/index.js",
+  "bin": {
+    "arb-converter": "dist/index.js"
+  },
+  "scripts": {
+    "start": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts",
+    "setup": "npm run build && npm install -g",
+    "build": "tsc -p .",
+    "test": "sudo npm i -g && arb-converter",
+    "refresh": "rm -rf ./node_modules ./package-lock.json && npm install"
+  },
+  "dependencies": {
+    "@types/node": "^12.6.8",
+    "chalk": "^2.4.2",
+    "commander": "^2.20.0"
+  },
+  "devDependencies": {
+    "@types/chalk": "^2.2.0",
+    "@types/commander": "^2.12.2",
+    "nodemon": "^1.19.1",
+    "ts-node": "^8.3.0",
+    "typescript": "^3.5.3"
+  }
+}
