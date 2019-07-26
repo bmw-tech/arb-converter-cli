@@ -19,13 +19,13 @@
     "test:cov": "jest --coverage"
   },
   "dependencies": {
-    "@types/lodash": "^4.14.136",
-    "@types/node": "^12.6.8",
     "chalk": "^2.4.2",
     "commander": "^2.20.0",
     "lodash": "^4.17.15"
   },
   "devDependencies": {
+    "@types/lodash": "^4.14.136",
+    "@types/node": "^12.6.8",
     "@types/chalk": "^2.2.0",
     "@types/commander": "^2.12.2",
     "@types/jest": "^24.0.15",
