@@ -1,9 +1,15 @@
 version: 2.1
 
 orbs:
-  hello: circleci/hello-build@0.0.7
+  codecov: codecov/codecov@1.0.4
 
-workflows:
-  "Hello Workflow":
-    jobs:
-      - hello/hello-build
+jobs:
+  build:
+    docker:
+      - image: circleci/node:10
+    steps:
+      - checkout
+      - run: npm install
+      - run: npm run test:cov
+      - codecov/upload:
+        file: 'coverage/lcov.info'

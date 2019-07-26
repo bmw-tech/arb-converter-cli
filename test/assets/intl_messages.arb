@@ -1,0 +1,43 @@
+{
+  "@@last_modified": "2019-07-24T16:59:04.866876",
+  "thisIsATest": "thisIsATest",
+  "@thisIsATest": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "something": "Aland Islands",
+  "@something": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "moreStrings": "moreStrings",
+  "@moreStrings": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "areWeDoneYet": "areWeDoneYet",
+  "@areWeDoneYet": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "wassup": "American Samoa",
+  "@wassup": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "rimCharity": "rimCharity",
+  "@rimCharity": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Angola": "Angola",
+  "@Angola": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "madrid": "madrid",
+  "@madrid": {
+    "type": "text",
+    "placeholders": {}
+  }
+}
