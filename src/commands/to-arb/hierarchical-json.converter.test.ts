@@ -1,11 +1,11 @@
-import { HierarchicalJsonToArbConverter } from "./hierarchical-json-to-arb.converter";
+import { HierarchicalJsonConverter } from "./hierarchical-json.converter";
 import * as fs from "fs";
 import * as _ from "lodash";
 import * as rimraf from "rimraf";
 import * as path from "path";
 import chalk from "chalk";
 
-describe("HierarchicalJsonToArbConverter", () => {
+describe("HierarchicalJsonConverter", () => {
   const jsonDirectory = "./assets/to-arb/";
   const expectedArbFiles = "./assets/to-arb";
   const testDirectory = "./tmp";
@@ -23,7 +23,7 @@ describe("HierarchicalJsonToArbConverter", () => {
   describe("convertToArb", () => {
     it("should generate as many ARB files as JSON files given", () => {
       const lastModified = "2019-07-27T20:48:48.159Z";
-      const converter = new HierarchicalJsonToArbConverter(
+      const converter = new HierarchicalJsonConverter(
         jsonDirectory,
         testDirectory,
         lastModified

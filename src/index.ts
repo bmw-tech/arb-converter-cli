@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import chalk from "chalk";
 import * as commander from "commander";
-import { ArbConverter, HierarchicalJsonToArbConverter } from "./commands";
+import { ArbConverter, HierarchicalJsonConverter } from "./commands";
 
 commander.description(
   "CLI tool to convert ARB (Application Resource Bundle) files to other formats, and vice versa."
@@ -36,7 +36,9 @@ commander
 
 commander
   .command("to-arb <dir>")
-  .description("Specify the directory containing the JSON files to be converted to ARB")
+  .description(
+    "Specify the directory containing the JSON files to be converted to ARB"
+  )
   .option(
     "--from-hierarchical-json [outputDir]",
     "Convert from Hierarchical JSON (https://support.oneskyapp.com/hc/en-us/articles/214059578-Hierarchical-JSON-Format-json-)"
@@ -44,16 +46,20 @@ commander
   .action((dir, cmd) => {
     try {
       if (cmd.fromHierarchicalJson) {
-        const jsonConverter = new HierarchicalJsonToArbConverter(
+        const jsonConverter = new HierarchicalJsonConverter(
           dir,
           cmd.fromHierarchicalJson
         );
         jsonConverter.convertToArb();
       } else {
-        console.log(chalk.red(""));
+        console.log(
+          chalk.red(
+            "Please specify an option to determine the type of conversion"
+          )
+        );
       }
     } catch (error) {
-      console.log(chalk.red(""));
+      console.log(chalk.red(error));
     }
   });
 

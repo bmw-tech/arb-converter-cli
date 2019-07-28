@@ -2,7 +2,7 @@ import * as fs from "fs";
 import * as path from "path";
 import * as _ from "lodash";
 
-export class HierarchicalJsonToArbConverter {
+export class HierarchicalJsonConverter {
   constructor(
     private directoryWithJsonFiles: string,
     private outputDir: string,

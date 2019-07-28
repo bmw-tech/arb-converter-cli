@@ -1,1 +1,1 @@
-export * from './hierarchical-json-to-arb.converter';
+export * from './hierarchical-json.converter';
