@@ -22,6 +22,7 @@ coverage
 dist
 packages
 tools
+tmp
 
 # Dependency directory
 # Commenting this out is preferred by some people, see

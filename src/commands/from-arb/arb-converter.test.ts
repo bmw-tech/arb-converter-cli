@@ -1,10 +1,10 @@
-import { ArbConverter } from "../src/commands";
+import { ArbConverter } from "..";
 import * as fs from "fs";
 
 describe("ArbConverter", () => {
-  const arbTestFile = "./test/assets/intl_messages.arb";
-  const hierarchicalJsonTestFile = "./test/assets/intl_messages_test.json";
-  const expectedJsonFile = "./test/assets/intl_messages.json";
+  const arbTestFile = "./assets/from-arb/intl_messages.arb";
+  const hierarchicalJsonTestFile = "./assets/from-arb/intl_messages_test.json";
+  const expectedJsonFile = "./assets/from-arb/intl_messages.json";
 
   afterAll(() => {
     fs.unlinkSync(hierarchicalJsonTestFile);
