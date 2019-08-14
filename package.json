@@ -1,6 +1,6 @@
 {
   "name": "arb-converter-cli",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "CLI to convert ARB (Application Resource Bundle) files to different formats, and viceversa",
   "author": "Jorge Coca",
   "license": "MIT",
