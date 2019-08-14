@@ -9,7 +9,7 @@ CLI to convert ARB (Application Resource Bundle) files to different formats, and
 
 To install:
 
-`npm install -s arb-converter-cli`
+`npm install arb-converter-cli`
 
 For more details, run `arb-converter` on your terminal:
 
