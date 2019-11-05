@@ -26,6 +26,12 @@ Commands:
   to-arb [options] <dir>     Specify the directory containing the JSON files to be converted to ARB
 ```
 
+Examples:
+
+`arb-converter from-arb file_to_be_converted.arb --to-hierarchical-json converted_file.json`
+
+`arb-converter to-arb ./json_examples --from-hierarchical-json ./arb_examples`
+
 ## Maintainers
 
 Project Lead(s):
